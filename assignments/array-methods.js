@@ -104,6 +104,26 @@ console.log(`Total Donations ticket price total: ${ticketPriceTotal}`);
 
 // Problem 1
 
+let runnerId = [];
+
+runners.forEach((bibID) => {
+    runnerId.push(bibID.first_name)
+})
+console.log(`Runners crossing: ${runnerId}`)
+
 // Problem 2
 
+let initials = [];
+
+let uppercaseChar = runners.reduce((acc, currentItem) => {
+    // console.log(`ACC ${acc}`)
+    // console.log(`First Name ${currentItem.first_name} Last name ${currentItem.last_name}`)
+    return acc + ' ' + currentItem.first_name.slice(0,1) + currentItem.last_name.slice(0,1) + ', ' ;
+}, 0)
+
+initials.push(uppercaseChar);
+
+console.log(`Initials: ${initials}`)
+
 // Problem 3
+
