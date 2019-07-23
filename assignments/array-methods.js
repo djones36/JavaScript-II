@@ -127,3 +127,12 @@ console.log(`Initials: ${initials}`)
 
 // Problem 3
 
+let noEmail = [];
+
+runners.filter((missEmail) =>{
+    if(missEmail.email === ''){
+        noEmail.push(missEmail.first_name, missEmail.last_name)
+    }
+});
+
+console.log(`They are missing email: ${noEmail}`)

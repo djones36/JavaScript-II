@@ -4,8 +4,8 @@
 function myfunction() {
   let str = "Steve is the best TL!!!";
   function closure(){
-    let newStr = "Steve is in the closer";
-    alert(`${str}  ${newStr}`);
+    let newStr = "Steve is in the closure";
+    alert(`${str} ${newStr}`);
   }
   closure();
 }
